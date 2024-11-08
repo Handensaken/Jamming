@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnerManager : MonoBehaviour
 {
     [SerializeField] private Transform[] spawnPoints = new Transform[3];
-    [SerializeField] private List<GameObject> spawnableCharacters = new List<GameObject>();
+    public List<GameObject> spawnableCharacters = new List<GameObject>();
     private List<GameObject> spawnedCharacters = new List<GameObject>();
     void Start()
     {
