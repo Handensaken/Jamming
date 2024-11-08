@@ -1,51 +1,27 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PickManager : MonoBehaviour
 {
-    [SerializeField] private Camera MainCamera;
-    [NonSerialized] public List<GameObject> pickedCharacters = new List<GameObject>();
-    void Start()
+    private List<GameObject> pickedCharacters = new List<GameObject>();
+    [SerializeField] private Transform[] pickedCharacterPosition = new Transform[5];
+    void OnEnable()
     {
-        MainCamera = FindAnyObjectByType<Camera>();
+        GameEventsManager.instance.pickedEvents.OnPicked += AddCharacters;
     }
-    void Update()
+    void OnDisable()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            TryPick();
-        }
+        GameEventsManager.instance.pickedEvents.OnPicked -= AddCharacters;
     }
     public void AddCharacters(GameObject character)
     {
         pickedCharacters.Add(character);
-    }
-    private void TryPick()
-    {
-        Debug.Log("idk");
-        RaycastHit hit;
-        if (Physics.Raycast(MainCamera.ScreenToWorldPoint(Input.mousePosition), MainCamera.transform.forward, out hit, 1000f))
+        if (pickedCharacterPosition != null)
         {
-            Debug.Log("pppp");
-            Debug.Log(hit);
-            GameObject pickedObject = hit.collider.gameObject;
-            if (pickedObject.tag == "Pickable")
-            {
-                pickedCharacters.Add(pickedObject);
-                Destroy(pickedObject);
-            }
+            character.transform.position = pickedCharacterPosition[pickedCharacters.Count].position;
         }
-    }
-    void OnDrawGizmosSelected()
-    {
-        if (MainCamera != null)
-        {
-            // Draws a blue line from this transform to the target
-            Gizmos.color = Color.blue;
-            Gizmos.DrawLine(MainCamera.ScreenToWorldPoint(Input.mousePosition), MainCamera.transform.forward);
-            }
-        
     }
 }
