@@ -10,7 +10,6 @@ public class TestScript : MonoBehaviour
     {
         float offset = Random.Range(0, 0.9f);
         float speedmult = Random.Range(1,1.5f);
-        Debug.Log(gameObject.name + $"Offset= {offset} Speed = {speedmult}");
         Huhrensohn = GetComponent<Animator>();
         Huhrensohn.SetFloat("Offset", offset);
         Huhrensohn.SetFloat("SpeedMult", speedmult);
