@@ -16324,46 +16324,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 943136972160023063, guid: 10e9ecbd040edfc43bfe2fe01950a3ed,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 59.37
+      objectReference: {fileID: 0}
     - target: {fileID: 3839285518133679215, guid: 10e9ecbd040edfc43bfe2fe01950a3ed,
         type: 3}
       propertyPath: m_Name
       value: Manager
       objectReference: {fileID: 0}
-    - target: {fileID: 4245441534222083164, guid: 10e9ecbd040edfc43bfe2fe01950a3ed,
-        type: 3}
-      propertyPath: spawnableCharacters.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4245441534222083164, guid: 10e9ecbd040edfc43bfe2fe01950a3ed,
-        type: 3}
-      propertyPath: spawnableCharacters.Array.data[3]
-      value: 
-      objectReference: {fileID: 5571901637757956921, guid: 41f8c2b6c55331147b8ad87e588c3125,
-        type: 3}
-    - target: {fileID: 4245441534222083164, guid: 10e9ecbd040edfc43bfe2fe01950a3ed,
-        type: 3}
-      propertyPath: spawnableCharacters.Array.data[4]
-      value: 
-      objectReference: {fileID: 8411793201625378441, guid: 30a2758dbe729c84d912345d5c4da59f,
-        type: 3}
-    - target: {fileID: 4245441534222083164, guid: 10e9ecbd040edfc43bfe2fe01950a3ed,
-        type: 3}
-      propertyPath: spawnableCharacters.Array.data[5]
-      value: 
-      objectReference: {fileID: 6859567844554264018, guid: c7c782d226a8b244dbb25aaee3dc5273,
-        type: 3}
-    - target: {fileID: 4245441534222083164, guid: 10e9ecbd040edfc43bfe2fe01950a3ed,
-        type: 3}
-      propertyPath: spawnableCharacters.Array.data[6]
-      value: 
-      objectReference: {fileID: 7565765638163906517, guid: ec693b62afc6d7442b3b1a71bef89c29,
-        type: 3}
-    - target: {fileID: 4245441534222083164, guid: 10e9ecbd040edfc43bfe2fe01950a3ed,
-        type: 3}
-      propertyPath: spawnableCharacters.Array.data[7]
-      value: 
-      objectReference: {fileID: 7357710548839526422, guid: 19cd32c3bdc2ad740be0cac301c3f603,
-        type: 3}
     - target: {fileID: 6609499928846998979, guid: 10e9ecbd040edfc43bfe2fe01950a3ed,
         type: 3}
       propertyPath: m_LocalPosition.x

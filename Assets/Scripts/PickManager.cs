@@ -21,7 +21,15 @@ public class PickManager : MonoBehaviour
         pickedCharacters.Add(character);
         if (pickedCharacterPosition != null)
         {
-            character.transform.position = pickedCharacterPosition[pickedCharacters.Count].position;
+            character.transform.position = pickedCharacterPosition[pickedCharacters.Count - 1].position;
+        }
+    }
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = new Color(1, 1, 0, 0.75F);
+        foreach (var item in pickedCharacterPosition)
+        {
+            Gizmos.DrawSphere(item.transform.position, 0.5f);
         }
     }
 }

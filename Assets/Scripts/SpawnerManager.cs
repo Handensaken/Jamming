@@ -26,7 +26,7 @@ public class SpawnerManager : MonoBehaviour
             if (spawnableCharacters.Count != 0)
             {
                 int tempInt = Random.Range(0, spawnableCharacters.Count);
-                spawnedCharacters.Add(Instantiate(spawnableCharacters[tempInt], spawnPoints[i])); 
+                spawnedCharacters.Add(Instantiate(spawnableCharacters[tempInt], spawnPoints[i]));
                 spawnableCharacters.RemoveAt(tempInt);
             }
         }
@@ -39,5 +39,13 @@ public class SpawnerManager : MonoBehaviour
             Destroy(item);
         }
         InstantiateCharacters();
+    }
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = new Color(1, 1, 0, 0.75F);
+        foreach (var item in spawnPoints)
+        {
+            Gizmos.DrawSphere(item.transform.position, 0.5f);
+        }
     }
 }
