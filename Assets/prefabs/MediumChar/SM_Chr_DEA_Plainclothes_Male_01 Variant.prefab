@@ -56,7 +56,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: afef32c939fee6345981b37e9f78c862, type: 2}
+      objectReference: {fileID: 9100000, guid: 3196cdef93a82b845b47a42a6798e439, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4006df45e33be2469586de6fb57bdb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasPrefab: {fileID: 0}
   strength: 65
 --- !u!136 &6582461827097286429
 CapsuleCollider:
