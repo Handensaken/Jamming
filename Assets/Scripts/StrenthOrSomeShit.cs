@@ -29,7 +29,7 @@ public class StrenthOrSomeShit : MonoBehaviour
         Hover = false;
         GameEventsManager.instance.cameraEvents.HoverExit();
         Destroy(transform.GetChild(0).gameObject);
-        transform.position = Vector3.zero;
+        //transform.position = Vector3.zero;
         GameEventsManager.instance.pickedEvents.Picked(this.gameObject);
     }
     public void OnHoverEnter()
