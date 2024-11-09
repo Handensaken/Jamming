@@ -2477,7 +2477,7 @@ Transform:
   m_GameObject: {fileID: 256646527}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.17378235, y: -0.7484622, z: 0.2934494}
+  m_LocalPosition: {x: -8.34, y: -0.7484622, z: 0.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5363,6 +5363,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 615469543}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &624284173 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5860098772942761896, guid: 69c8cd7a45e79554dbc49c25493bf466,
+    type: 3}
+  m_PrefabInstance: {fileID: 1846348706}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &629193311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7913,7 +7925,7 @@ Transform:
   m_GameObject: {fileID: 973029021}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.17378235, y: 2.4745378, z: 9.563446}
+  m_LocalPosition: {x: -0.17378235, y: 2.4745378, z: 5.263}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10881,6 +10893,16 @@ PrefabInstance:
     - target: {fileID: 4053981752565848693, guid: 10e9ecbd040edfc43bfe2fe01950a3ed,
         type: 3}
       propertyPath: text
+      value: 
+      objectReference: {fileID: 1795963635}
+    - target: {fileID: 4053981752565848693, guid: 10e9ecbd040edfc43bfe2fe01950a3ed,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 624284173}
+    - target: {fileID: 4053981752565848693, guid: 10e9ecbd040edfc43bfe2fe01950a3ed,
+        type: 3}
+      propertyPath: introText
       value: 
       objectReference: {fileID: 1795963635}
     - target: {fileID: 4053981752565848693, guid: 10e9ecbd040edfc43bfe2fe01950a3ed,
@@ -18656,8 +18678,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 9.017775, y: 1, z: 0.5388256}
-  m_Center: {x: -4.3747573, y: 0, z: 0.2305871}
+  m_Size: {x: 10.530586, y: 7.986713, z: 0.5388255}
+  m_Center: {x: -3.6183085, y: 2.0411258, z: 0.23058707}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
