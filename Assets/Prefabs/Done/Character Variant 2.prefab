@@ -139,8 +139,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8849565318677643689, guid: ec693b62afc6d7442b3b1a71bef89c29,
         type: 3}
+      propertyPath: Name
+      value: Peter
+      objectReference: {fileID: 0}
+    - target: {fileID: 8849565318677643689, guid: ec693b62afc6d7442b3b1a71bef89c29,
+        type: 3}
       propertyPath: line
       value: Wait dose the first 5 work
+      objectReference: {fileID: 0}
+    - target: {fileID: 8849565318677643689, guid: ec693b62afc6d7442b3b1a71bef89c29,
+        type: 3}
+      propertyPath: characterName
+      value: your moms bf
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

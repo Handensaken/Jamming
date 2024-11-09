@@ -139,6 +139,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5895283101997582105, guid: 59af38112c1d82944b4043d584bd14cc,
         type: 3}
+      propertyPath: Name
+      value: Standing Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895283101997582105, guid: 59af38112c1d82944b4043d584bd14cc,
+        type: 3}
       propertyPath: line
       value: hej
       objectReference: {fileID: 0}
@@ -146,6 +151,11 @@ PrefabInstance:
         type: 3}
       propertyPath: strength
       value: 63
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895283101997582105, guid: 59af38112c1d82944b4043d584bd14cc,
+        type: 3}
+      propertyPath: characterName
+      value: Standing Man
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

@@ -139,6 +139,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8248797402644898425, guid: 9073726db4d4e974a98396a1b497f87a,
         type: 3}
+      propertyPath: Name
+      value: Lilly
+      objectReference: {fileID: 0}
+    - target: {fileID: 8248797402644898425, guid: 9073726db4d4e974a98396a1b497f87a,
+        type: 3}
       propertyPath: line
       value: It looks like 6-15 do the job
       objectReference: {fileID: 0}

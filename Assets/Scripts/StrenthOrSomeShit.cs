@@ -10,6 +10,7 @@ public class StrenthOrSomeShit : MonoBehaviour
     public int strength = 1;
     private bool Hover = false;
     public string line;
+    public string characterName;
 
     void Start()
     {

@@ -65,6 +65,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8370733499702906474, guid: 19cd32c3bdc2ad740be0cac301c3f603,
         type: 3}
+      propertyPath: Name
+      value: Jen
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370733499702906474, guid: 19cd32c3bdc2ad740be0cac301c3f603,
+        type: 3}
       propertyPath: line
       value: So Im just a bit dumb, bruh moment
       objectReference: {fileID: 0}
@@ -72,6 +77,11 @@ PrefabInstance:
         type: 3}
       propertyPath: strength
       value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370733499702906474, guid: 19cd32c3bdc2ad740be0cac301c3f603,
+        type: 3}
+      propertyPath: characterName
+      value: Ms Poop
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

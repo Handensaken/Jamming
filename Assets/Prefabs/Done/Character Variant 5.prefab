@@ -60,8 +60,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5430321737366307296, guid: eb22f11889f74154d9152cbcc897456f,
         type: 3}
+      propertyPath: Name
+      value: Bardi Mc bard bard
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430321737366307296, guid: eb22f11889f74154d9152cbcc897456f,
+        type: 3}
       propertyPath: line
       value: Idk why the first 5 just dont work
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430321737366307296, guid: eb22f11889f74154d9152cbcc897456f,
+        type: 3}
+      propertyPath: characterName
+      value: Peter
       objectReference: {fileID: 0}
     - target: {fileID: 6443920850037342108, guid: eb22f11889f74154d9152cbcc897456f,
         type: 3}
