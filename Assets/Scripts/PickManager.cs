@@ -36,7 +36,7 @@ public class PickManager : MonoBehaviour
     }
     private void MoveCharacter(GameObject character)
     {
-        Debug.Log("running");
+//        Debug.Log("running");
         if (pickedCharacterPosition != null)
         {
             character.transform.position = pickedCharacterPosition[pickedCharacters.Count - 1].position;

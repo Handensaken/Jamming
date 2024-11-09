@@ -65,7 +65,7 @@ public class TestScript : MonoBehaviour
 
     public void EndCelebrate()
     {
-        Debug.Log("Ending Celebrate");
+//        Debug.Log("Ending Celebrate");
         GameEventsManager.instance.pickedEvents.SelectionDone(gameObject);
     }
 

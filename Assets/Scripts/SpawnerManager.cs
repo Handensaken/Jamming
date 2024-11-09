@@ -64,7 +64,7 @@ public class SpawnerManager : MonoBehaviour
 
     private void SpawnParticles(Vector3 pos)
     {
-        Instantiate(Ash, pos, quaternion.identity);
+        Instantiate(Ash, new Vector3(pos.x, pos.y-1, pos.z), quaternion.identity);
     }
 
     void OnDrawGizmosSelected()

@@ -9804,6 +9804,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4245441534222083164, guid: 10e9ecbd040edfc43bfe2fe01950a3ed,
         type: 3}
+      propertyPath: Ash
+      value: 
+      objectReference: {fileID: 841155597125963254, guid: 257c899b2e264a8488988854ed935a44,
+        type: 3}
+    - target: {fileID: 4245441534222083164, guid: 10e9ecbd040edfc43bfe2fe01950a3ed,
+        type: 3}
       propertyPath: spawnableCharacters.Array.size
       value: 15
       objectReference: {fileID: 0}
