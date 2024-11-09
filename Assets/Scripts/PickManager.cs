@@ -14,6 +14,7 @@ public class PickManager : MonoBehaviour
     void OnEnable()
     {
         GameEventsManager.instance.pickedEvents.OnPicked += AddCharacters;
+        GameEventsManager.instance.pickedEvents.OnSelectionDone += MoveCharacter;
     }
     void OnDisable()
     {
@@ -22,13 +23,19 @@ public class PickManager : MonoBehaviour
     public void AddCharacters(GameObject character)
     {
         pickedCharacters.Add(character);
-        if (pickedCharacterPosition != null)
+        /*if (pickedCharacterPosition != null)
         {
             character.transform.position = pickedCharacterPosition[pickedCharacters.Count - 1].position;
-        }
+        }*/
         if(pickedCharacters.Count == 5) {GameEventsManager.instance.cameraEvents.FightStart();
             pickedCharacters[0].transform.position = fightingPos.position;
             pickedCharacters[0].transform.rotation = fightingPos.rotation;
+        }
+    }
+    private void MoveCharacter(GameObject character){
+        if (pickedCharacterPosition != null)
+        {
+            character.transform.position = pickedCharacterPosition[pickedCharacters.Count - 1].position;
         }
     }
     void OnDrawGizmosSelected()

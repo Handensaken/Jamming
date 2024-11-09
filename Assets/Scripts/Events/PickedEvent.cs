@@ -13,12 +13,12 @@ public class PickedEvent
             OnPicked(character);
         }
     }
-    public event Action OnSelectionDone;
-    public void SelectionDone()
+    public event Action<GameObject> OnSelectionDone;
+    public void SelectionDone(GameObject character)
     {
         if (OnSelectionDone != null)
         {
-            OnSelectionDone();
+            OnSelectionDone(character);
         }
     }
     
