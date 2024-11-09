@@ -84,6 +84,7 @@ public class CameraManager : MonoBehaviour
     }
 
     public void FightStart() {
+        Debug.Log("Fight");
         _fighting = true;
         mainCamera.transform.position = _fightingCameraPos.position;
         mainCamera.transform.rotation = _fightingCameraPos.rotation;
