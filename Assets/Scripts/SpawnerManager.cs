@@ -14,10 +14,14 @@ public class SpawnerManager : MonoBehaviour
     void OnEnable()
     {
         GameEventsManager.instance.pickedEvents.OnSelectionDone += NewSpawn;
+        GameEventsManager.instance.pickedEvents.OnPicked += RemoveUnSelected;
+
     }
     void OnDisable()
     {
         GameEventsManager.instance.pickedEvents.OnSelectionDone -= NewSpawn;
+        GameEventsManager.instance.pickedEvents.OnPicked -= RemoveUnSelected;
+
     }
     private void InstantiateCharacters()
     {
@@ -33,12 +37,15 @@ public class SpawnerManager : MonoBehaviour
     }
     private void NewSpawn(GameObject gameObject)
     {
+        InstantiateCharacters();
+    }
+    private void RemoveUnSelected(GameObject gameObject)
+    {
         spawnedCharacters.Remove(gameObject);
         foreach (var item in spawnedCharacters)
         {
             Destroy(item);
         }
-        InstantiateCharacters();
     }
     void OnDrawGizmosSelected()
     {

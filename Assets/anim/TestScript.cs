@@ -48,7 +48,10 @@ public class TestScript : MonoBehaviour
     }
     private void CelebratePooper(GameObject g)
     {
-        SetTrigger("Celebrate");
+        if (g == transform.parent.gameObject)
+        {
+            SetTrigger("Celebrate");
+        }
     }
     void OnDisable()
     {
@@ -58,7 +61,7 @@ public class TestScript : MonoBehaviour
     }
     public void EndCelebrate()
     {
-       // Debug.Log("Ending Celebrate");
+        // Debug.Log("Ending Celebrate");
         GameEventsManager.instance.pickedEvents.SelectionDone(gameObject);
     }
     public void StartFighting()
