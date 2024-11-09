@@ -67,8 +67,8 @@ public class CameraManager : MonoBehaviour
             cameraStartPosition.y,
             cameraStartPosition.z
         );
-        //target = newCameraPos + (targetTransform.position - newCameraPos).normalized * maxDistance;
-        target =
+        target = newCameraPos + (targetTransform.position - newCameraPos).normalized * maxDistance;
+        //target =
             cameraStartPosition
             + (targetTransform.position - cameraStartPosition).normalized * maxDistance;
     }
