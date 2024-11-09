@@ -10,8 +10,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1082321175898766756, guid: ba756dccd2bcefe4fa13f0dd5bcdbc61,
         type: 3}
+      propertyPath: Name
+      value: Ersa
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082321175898766756, guid: ba756dccd2bcefe4fa13f0dd5bcdbc61,
+        type: 3}
       propertyPath: line
       value: so good poop
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082321175898766756, guid: ba756dccd2bcefe4fa13f0dd5bcdbc61,
+        type: 3}
+      propertyPath: characterName
+      value: Danniel
       objectReference: {fileID: 0}
     - target: {fileID: 2104353545454896088, guid: ba756dccd2bcefe4fa13f0dd5bcdbc61,
         type: 3}

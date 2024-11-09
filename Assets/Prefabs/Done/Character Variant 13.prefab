@@ -84,6 +84,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 126316670355054958, guid: 37c10f6f0c4632343b52bf0af32d72a9,
         type: 3}
+      propertyPath: Name
+      value: Hat Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 126316670355054958, guid: 37c10f6f0c4632343b52bf0af32d72a9,
+        type: 3}
       propertyPath: line
       value: fine poop
       objectReference: {fileID: 0}
@@ -91,6 +96,11 @@ PrefabInstance:
         type: 3}
       propertyPath: strength
       value: 71
+      objectReference: {fileID: 0}
+    - target: {fileID: 126316670355054958, guid: 37c10f6f0c4632343b52bf0af32d72a9,
+        type: 3}
+      propertyPath: characterName
+      value: Mr Hat Man
       objectReference: {fileID: 0}
     - target: {fileID: 1437144512412606226, guid: 37c10f6f0c4632343b52bf0af32d72a9,
         type: 3}

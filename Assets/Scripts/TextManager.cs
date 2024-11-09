@@ -5,7 +5,8 @@ using TMPro;
 
 public class TextManager : MonoBehaviour
 {
-    public TextMeshProUGUI text;
+    public TextMeshProUGUI introText;
+    public TextMeshProUGUI nameText;
     public GameObject textHolder;
     void Start()
     {
@@ -25,10 +26,11 @@ public class TextManager : MonoBehaviour
     void EnableText(Transform transform)
     {
         textHolder.SetActive(true);
-        string temp = transform.gameObject.GetComponent<StrenthOrSomeShit>().line;
+        StrenthOrSomeShit temp = transform.gameObject.GetComponent<StrenthOrSomeShit>();
         if (temp != null)
         {
-            text.text = temp;
+            introText.text = temp.line;
+            nameText.text = temp.characterName;
         }
     }
     void DisableText()
