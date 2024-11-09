@@ -45,6 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820035f27c3acfd429285e411dfc5bc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickedCharacters: []
+  CharacterWinPositions: []
+  CharacterLosePositions: []
+  fightingPos: {fileID: 0}
   pickedCharacterPosition:
   - {fileID: 161778303059732163}
   - {fileID: 3912903322830753635}
@@ -276,6 +280,7 @@ Transform:
   - {fileID: 6679101323855549646}
   - {fileID: 7316597907082314082}
   - {fileID: 9135070116641387103}
+  - {fileID: 7675269053912448603}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4596170072229383893
@@ -407,6 +412,51 @@ Transform:
   - {fileID: 5848046448356657207}
   m_Father: {fileID: 5596285710581006308}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6574405343457660360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7675269053912448603}
+  - component: {fileID: 3866753514973051813}
+  m_Layer: 0
+  m_Name: WinLoseManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7675269053912448603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6574405343457660360}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6609499928846998979}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3866753514973051813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6574405343457660360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a267f4b908ae7634cbb9708661e4537b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 4
 --- !u!1 &6907656507048018271
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,7 +576,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 725cb0d7db258654c917140aaea23bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
+  introText: {fileID: 0}
+  nameText: {fileID: 0}
   textHolder: {fileID: 0}
 --- !u!1 &8676386146424140078
 GameObject:
@@ -575,3 +626,4 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   maxDistance: 2
   speed: 0.1
+  _fightingCameraPos: {fileID: 0}
