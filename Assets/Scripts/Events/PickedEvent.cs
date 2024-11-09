@@ -13,4 +13,13 @@ public class PickedEvent
             OnPicked(character);
         }
     }
+    public event Action OnSelectionDone;
+    public void SelectionDone()
+    {
+        if (OnSelectionDone != null)
+        {
+            OnSelectionDone();
+        }
+    }
+    
 }
