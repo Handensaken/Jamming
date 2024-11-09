@@ -23,6 +23,7 @@ public class PickManager : MonoBehaviour
         {
             character.transform.position = pickedCharacterPosition[pickedCharacters.Count - 1].position;
         }
+        if(pickedCharacters.Count == 5) {GameEventsManager.instance.cameraEvents.FightStart();}
     }
     void OnDrawGizmosSelected()
     {
@@ -32,4 +33,5 @@ public class PickManager : MonoBehaviour
             Gizmos.DrawSphere(item.transform.position, 0.5f);
         }
     }
+
 }
