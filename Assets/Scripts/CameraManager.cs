@@ -16,8 +16,6 @@ public class CameraManager : MonoBehaviour
     //Max ooger booger
     private bool _fighting;
     [SerializeField] private Transform _fightingCameraPos;
-
-
     void Start()
     {
         //mainCamera = FindAnyObjectByType<Camera>();
@@ -27,9 +25,7 @@ public class CameraManager : MonoBehaviour
         GameEventsManager.instance.cameraEvents.OnHoverEnter += HoverEnter;
         GameEventsManager.instance.cameraEvents.OnFightStart += FightStart;
     }
-
     void OnEnable() { }
-
     void OnDisable()
     {
         GameEventsManager.instance.cameraEvents.OnHoverEnter -= HoverEnter;
@@ -37,7 +33,6 @@ public class CameraManager : MonoBehaviour
         GameEventsManager.instance.cameraEvents.OnFightStart -= FightStart;
 
     }
-
     void Update()
     {
         if (Hover)
@@ -60,7 +55,6 @@ public class CameraManager : MonoBehaviour
             }
         }
     }
-
     public void HoverEnter(Transform targetTransform)
     {
         Hover = true;
@@ -72,19 +66,16 @@ public class CameraManager : MonoBehaviour
         target = newCameraPos + (targetTransform.position - newCameraPos).normalized * maxDistance;
         //target =cameraStartPosition   + (targetTransform.position - cameraStartPosition).normalized * maxDistance;
     }
-
     public void HoverExit()
     {
         Hover = false;
         target = mainCamera.transform.position;
     }
-
     void OnDrawGizmosSelected()
     {
         Gizmos.color = new Color(1, 1, 0, 0.75F);
         Gizmos.DrawSphere(target, 0.5f);
     }
-
     public void FightStart()
     {
         if (_fightingCameraPos != null)

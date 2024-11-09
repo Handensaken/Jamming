@@ -7,8 +7,6 @@ using UnityEngine;
 public class PickManager : MonoBehaviour
 {
     public List<GameObject> pickedCharacters = new List<GameObject>();
-    public List<Transform> CharacterWinPositions;
-    public List<Transform> CharacterLosePositions;
     public Transform fightingPos;
     [SerializeField] private Transform[] pickedCharacterPosition = new Transform[5];
     void OnEnable()
@@ -52,5 +50,4 @@ public class PickManager : MonoBehaviour
             Gizmos.DrawSphere(item.transform.position, 0.5f);
         }
     }
-
 }

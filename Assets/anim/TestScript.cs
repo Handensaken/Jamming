@@ -14,6 +14,8 @@ public class TestScript : MonoBehaviour
         Huhrensohn = GetComponent<Animator>();
         Huhrensohn.SetFloat("Offset", offset);
         Huhrensohn.SetFloat("SpeedMult", speedmult);
+        GameEventsManager.instance.pickedEvents.OnPicked += CelebratePooper;
+        GameEventsManager.instance.cameraEvents.OnFightStart += StartFighting;
     }
 
     // Update is called once per frame
@@ -43,8 +45,6 @@ public class TestScript : MonoBehaviour
     }
     void OnEnable()
     {
-        GameEventsManager.instance.pickedEvents.OnPicked += CelebratePooper;
-        GameEventsManager.instance.cameraEvents.OnFightStart += StartFighting;
     }
     private void CelebratePooper(GameObject g)
     {
