@@ -4,18 +4,15 @@ using UnityEngine;
 
 public class AnimEventTest : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
-        
+      
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    public void cunt(){
-        
-    }
+    void Update() { }
+
+    public void cunt() { }
 }
