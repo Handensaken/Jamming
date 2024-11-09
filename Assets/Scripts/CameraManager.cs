@@ -20,7 +20,7 @@ public class CameraManager : MonoBehaviour
     {
         //mainCamera = FindAnyObjectByType<Camera>();
         cameraStartPosition = mainCamera.transform.position;
-        Debug.Log(cameraStartPosition + " camerpos");
+//        Debug.Log(cameraStartPosition + " camerpos");
         GameEventsManager.instance.cameraEvents.OnHoverExit += HoverExit;
         GameEventsManager.instance.cameraEvents.OnHoverEnter += HoverEnter;
         GameEventsManager.instance.cameraEvents.OnFightStart += FightStart;

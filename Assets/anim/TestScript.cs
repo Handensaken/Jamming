@@ -43,26 +43,32 @@ public class TestScript : MonoBehaviour
         float r = Random.Range(0f, 2f);
         Huhrensohn.SetFloat(name, r);
     }
+
     void OnEnable()
     {
     }
+
     private void CelebratePooper(GameObject g)
     {
         if (g == transform.parent.gameObject)
         {
+            //            Debug.Log("fucker");
             SetTrigger("Celebrate");
         }
     }
+
     void OnDisable()
     {
         GameEventsManager.instance.pickedEvents.OnPicked -= CelebratePooper;
         GameEventsManager.instance.cameraEvents.OnFightStart -= StartFighting;
     }
+
     public void EndCelebrate()
     {
-        // Debug.Log("Ending Celebrate");
+        Debug.Log("Ending Celebrate");
         GameEventsManager.instance.pickedEvents.SelectionDone(gameObject);
     }
+
     public void StartFighting()
     {
         SetBool("Fighting", true);
