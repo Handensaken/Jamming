@@ -44,8 +44,8 @@ public class CameraManager : MonoBehaviour
     {
         Hover = true;
         Vector3 newCameraPos = new Vector3(targetTransform.transform.position.x, cameraStartPosition.y, cameraStartPosition.z);
-        //target = newCameraPos + (targetTransform.position - newCameraPos).normalized * maxDistance;
-        target = cameraStartPosition + (targetTransform.position - cameraStartPosition).normalized * maxDistance;
+        target = newCameraPos + (targetTransform.position - newCameraPos).normalized * maxDistance;
+        //target = cameraStartPosition + (targetTransform.position - cameraStartPosition).normalized * maxDistance;
     }
     public void HoverExit()
     {

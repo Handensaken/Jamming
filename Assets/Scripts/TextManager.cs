@@ -11,6 +11,7 @@ public class TextManager : MonoBehaviour
     {
         GameEventsManager.instance.cameraEvents.OnHoverEnter += EnableText;
         GameEventsManager.instance.cameraEvents.OnHoverExit += DisableText;
+        textHolder.SetActive(false);
     }
     void OnEnable()
     {
@@ -23,7 +24,7 @@ public class TextManager : MonoBehaviour
     }
     void EnableText(Transform transform)
     {
-        
+        textHolder.SetActive(true);
         string temp = transform.gameObject.GetComponent<StrenthOrSomeShit>().line;
         if (temp != null)
         {
@@ -32,6 +33,6 @@ public class TextManager : MonoBehaviour
     }
     void DisableText()
     {
-
+        textHolder.SetActive(false);
     }
 }
