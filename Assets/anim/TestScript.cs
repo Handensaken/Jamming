@@ -41,4 +41,17 @@ public class TestScript : MonoBehaviour
         float r = Random.Range(0f, 2f);
         Huhrensohn.SetFloat(name, r);
     }
+    void OnEnable(){
+        GameEventsManager.instance.pickedEvents.OnPicked += CelebratePooper;
+    }
+    private void CelebratePooper(GameObject g){
+        SetTrigger("Celebrate");
+    }
+    void OnDisable(){
+        GameEventsManager.instance.pickedEvents.OnPicked -= CelebratePooper;
+    }
+    public void EndCelebrate(){
+        Debug.Log("Ending Celebrate");
+        GameEventsManager.instance.pickedEvents.SelectionDone();
+    }
 }
