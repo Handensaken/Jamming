@@ -19,6 +19,7 @@ public class PickManager : MonoBehaviour
     void OnDisable()
     {
         GameEventsManager.instance.pickedEvents.OnPicked -= AddCharacters;
+             GameEventsManager.instance.pickedEvents.OnSelectionDone -= MoveCharacter;
     }
     public void AddCharacters(GameObject character)
     {
@@ -28,11 +29,13 @@ public class PickManager : MonoBehaviour
             character.transform.position = pickedCharacterPosition[pickedCharacters.Count - 1].position;
         }*/
         if(pickedCharacters.Count == 5) {GameEventsManager.instance.cameraEvents.FightStart();
+            Debug.Log("whore");
             pickedCharacters[0].transform.position = fightingPos.position;
             pickedCharacters[0].transform.rotation = fightingPos.rotation;
         }
     }
     private void MoveCharacter(GameObject character){
+        Debug.Log("running");
         if (pickedCharacterPosition != null)
         {
             character.transform.position = pickedCharacterPosition[pickedCharacters.Count - 1].position;

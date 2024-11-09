@@ -13,11 +13,11 @@ public class SpawnerManager : MonoBehaviour
     }
     void OnEnable()
     {
-        GameEventsManager.instance.pickedEvents.OnPicked += NewSpawn;
+        GameEventsManager.instance.pickedEvents.OnSelectionDone += NewSpawn;
     }
     void OnDisable()
     {
-        GameEventsManager.instance.pickedEvents.OnPicked -= NewSpawn;
+        GameEventsManager.instance.pickedEvents.OnSelectionDone -= NewSpawn;
     }
     private void InstantiateCharacters()
     {
