@@ -57,7 +57,6 @@ public class TestScript : MonoBehaviour
     {
         GameEventsManager.instance.pickedEvents.OnPicked -= CelebratePooper;
         GameEventsManager.instance.cameraEvents.OnFightStart -= StartFighting;
-
     }
     public void EndCelebrate()
     {
