@@ -41,12 +41,13 @@ public class WinLose : MonoBehaviour
         {
             score += pickManager.pickedCharacters[i].GetComponent<StrenthOrSomeShit>().strength;
         }
-        if (score * 1000> winScore)
+        if (score * 1000 > winScore)
         {
             mainCamera.transform.position = winCameraPos.position;
             for (int i = 0; i < yourSquad.Count; i++)
             {
-                yourSquad[i].transform.position = CharacterWinPositions[i].transform.position;
+                //yourSquad[i].transform.position = Vector3.zero;
+                yourSquad[i].transform.position = CharacterWinPositions[i].position;
             }
             Debug.Log("Win");
             Debug.Log(mainCamera.transform.position + " camerea pos");

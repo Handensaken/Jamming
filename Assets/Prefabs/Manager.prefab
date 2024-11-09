@@ -46,8 +46,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickedCharacters: []
-  CharacterWinPositions: []
-  CharacterLosePositions: []
   fightingPos: {fileID: 0}
   pickedCharacterPosition:
   - {fileID: 161778303059732163}
@@ -457,6 +455,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 4
+  winScore: 300
+  winCameraPos: {fileID: 0}
+  loseCameraPos: {fileID: 0}
+  CharacterWinPositions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  CharacterLosePositions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &6907656507048018271
 GameObject:
   m_ObjectHideFlags: 0
