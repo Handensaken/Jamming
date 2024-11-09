@@ -43,6 +43,7 @@ public class TestScript : MonoBehaviour
     }
     void OnEnable(){
         GameEventsManager.instance.pickedEvents.OnPicked += CelebratePooper;
+        GameEventsManager.instance.cameraEvents.OnFightStart += StartFighting;
     }
     private void CelebratePooper(GameObject g){
         SetTrigger("Celebrate");
@@ -53,5 +54,8 @@ public class TestScript : MonoBehaviour
     public void EndCelebrate(){
         Debug.Log("Ending Celebrate");
         GameEventsManager.instance.pickedEvents.SelectionDone();
+    }
+    public void StartFighting(){
+        SetBool("Fighting", true);
     }
 }

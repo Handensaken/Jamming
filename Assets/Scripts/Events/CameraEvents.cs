@@ -20,4 +20,13 @@ public class CameraEvents
             OnHoverExit();
         }
     }
+
+    public event Action OnFightStart;
+    public void FightStart()
+    {
+        if (OnFightStart != null)
+        {
+            OnFightStart();
+        }
+    }
 }
