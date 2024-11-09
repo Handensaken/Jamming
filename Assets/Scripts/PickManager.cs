@@ -7,6 +7,9 @@ using UnityEngine;
 public class PickManager : MonoBehaviour
 {
     private List<GameObject> pickedCharacters = new List<GameObject>();
+    public List<Transform> CharacterWinPositions;
+    public List<Transform> CharacterLosePositions;
+    public Transform fightingPos;
     [SerializeField] private Transform[] pickedCharacterPosition = new Transform[5];
     void OnEnable()
     {
@@ -23,7 +26,10 @@ public class PickManager : MonoBehaviour
         {
             character.transform.position = pickedCharacterPosition[pickedCharacters.Count - 1].position;
         }
-        if(pickedCharacters.Count == 5) {GameEventsManager.instance.cameraEvents.FightStart();}
+        if(pickedCharacters.Count == 5) {GameEventsManager.instance.cameraEvents.FightStart();
+            pickedCharacters[0].transform.position = fightingPos.position;
+            pickedCharacters[0].transform.rotation = fightingPos.rotation;
+        }
     }
     void OnDrawGizmosSelected()
     {
