@@ -157,6 +157,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chr_FantasyHero_Preset_113 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2428221964764629234, guid: 4f005c3bd1614b94fb307eabe4bd5784,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 122
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

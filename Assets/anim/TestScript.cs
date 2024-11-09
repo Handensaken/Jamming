@@ -73,4 +73,7 @@ public class TestScript : MonoBehaviour
     {
         SetBool("Fighting", true);
     }
+    public void StopFighting(){
+        SetBool("Fighting", false);
+    }
 }
