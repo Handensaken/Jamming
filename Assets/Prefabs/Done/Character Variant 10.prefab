@@ -137,6 +137,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character Variant 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8755796428660200410, guid: 905e0075282e6b54a8333429fba12963,
+        type: 3}
+      propertyPath: line
+      value: This is your text
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3536498320517498271, guid: 905e0075282e6b54a8333429fba12963, type: 3}
