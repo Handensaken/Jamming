@@ -68,9 +68,7 @@ public class CameraManager : MonoBehaviour
             cameraStartPosition.z
         );
         target = newCameraPos + (targetTransform.position - newCameraPos).normalized * maxDistance;
-        //target =
-            cameraStartPosition
-            + (targetTransform.position - cameraStartPosition).normalized * maxDistance;
+        //target =cameraStartPosition   + (targetTransform.position - cameraStartPosition).normalized * maxDistance;
     }
 
     public void HoverExit()
