@@ -5,30 +5,40 @@ using UnityEngine.UI;
 
 public class StrenthOrSomeShit : MonoBehaviour
 {
-    private PickManager pickManager;
     public GameObject canvasPrefab;
-    [Range(1,100)]
+    [Range(1, 100)]
     public int strength = 1;
     private bool Hover = false;
-    
-    void Start(){
+    public string line;
+
+    void Start()
+    {
         gameObject.tag = "Pickable";
-        pickManager = FindAnyObjectByType<PickManager>();
     }
-    void Update(){
-        if (Hover){
-            
+    void Update()
+    {
+        if (Hover)
+        {
+
         }
     }
-    public void Selected(){
+    public void Selected()
+    {
         transform.parent = null;
+        Hover = false;
+        GameEventsManager.instance.cameraEvents.HoverExit();
+        Destroy(transform.GetChild(0).gameObject);
         transform.position = Vector3.zero;
         GameEventsManager.instance.pickedEvents.Picked(this.gameObject);
     }
-    public void OnHoverEnter(){
+    public void OnHoverEnter()
+    {
         Hover = true;
+        GameEventsManager.instance.cameraEvents.HoverEnter(this.gameObject.transform);
     }
-    public void OnHoverExit(){
+    public void OnHoverExit()
+    {
         Hover = false;
+        GameEventsManager.instance.cameraEvents.HoverExit();
     }
 }
