@@ -8017,6 +8017,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1239181204544214934, guid: cc759135c87a62248b9312e6ba3d17bf,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.75
+      objectReference: {fileID: 0}
     - target: {fileID: 4292800123254893219, guid: cc759135c87a62248b9312e6ba3d17bf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16805,6 +16810,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5851701616715940309, guid: 69c8cd7a45e79554dbc49c25493bf466,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.43876487
+      objectReference: {fileID: 0}
+    - target: {fileID: 5851701616715940309, guid: 69c8cd7a45e79554dbc49c25493bf466,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.43876487
+      objectReference: {fileID: 0}
+    - target: {fileID: 5851701616715940309, guid: 69c8cd7a45e79554dbc49c25493bf466,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.43876487
+      objectReference: {fileID: 0}
+    - target: {fileID: 5851701616715940309, guid: 69c8cd7a45e79554dbc49c25493bf466,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -179
       objectReference: {fileID: 0}
     - target: {fileID: 6480902843592582438, guid: 69c8cd7a45e79554dbc49c25493bf466,
         type: 3}

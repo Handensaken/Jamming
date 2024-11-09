@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 public class PickManager : MonoBehaviour
 {
@@ -39,7 +40,7 @@ public class PickManager : MonoBehaviour
 //        Debug.Log("running");
         if (pickedCharacterPosition != null)
         {
-            character.transform.position = pickedCharacterPosition[pickedCharacters.Count - 1].position;
+            character.transform.parent.transform.position = pickedCharacterPosition[pickedCharacters.Count - 1].position;
         }
     }
     void OnDrawGizmosSelected()

@@ -21,6 +21,8 @@ public class TestScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        transform.localPosition = new Vector3(0, 0, 0);
+
         if (Random.Range(0, 10) > 8)
         {
             SetRandomFloat("AltSadVal");
@@ -65,7 +67,7 @@ public class TestScript : MonoBehaviour
 
     public void EndCelebrate()
     {
-//        Debug.Log("Ending Celebrate");
+        //        Debug.Log("Ending Celebrate");
         GameEventsManager.instance.pickedEvents.SelectionDone(gameObject);
     }
 
@@ -73,7 +75,8 @@ public class TestScript : MonoBehaviour
     {
         SetBool("Fighting", true);
     }
-    public void StopFighting(){
+    public void StopFighting()
+    {
         SetBool("Fighting", false);
     }
 }

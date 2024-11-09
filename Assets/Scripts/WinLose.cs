@@ -49,8 +49,6 @@ public class WinLose : MonoBehaviour
                 //yourSquad[i].transform.position = Vector3.zero;
                 yourSquad[i].transform.position = CharacterWinPositions[i].position;
             }
-            Debug.Log("Win");
-            Debug.Log(mainCamera.transform.position + " camerea pos");
         }
         else
         {

@@ -64,15 +64,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1628710968088830, guid: 039176e64c036304a86eadb2bd97e835,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: -7635271508883041012}
-    - targetCorrespondingSourceObject: {fileID: 1628710968088830, guid: 039176e64c036304a86eadb2bd97e835,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: -1809909107591702381}
-    - targetCorrespondingSourceObject: {fileID: 1628710968088830, guid: 039176e64c036304a86eadb2bd97e835,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2988738818220282493}
     - targetCorrespondingSourceObject: {fileID: 1628710968088830, guid: 039176e64c036304a86eadb2bd97e835,
         type: 3}
       insertIndex: -1
@@ -84,20 +76,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 600212491964777480}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &-7635271508883041012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 599448624289668342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4006df45e33be2469586de6fb57bdb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvasPrefab: {fileID: 0}
-  strength: 5
 --- !u!136 &-1809909107591702381
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -121,33 +99,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
---- !u!54 &2988738818220282493
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 599448624289668342}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &1132992180600763202
 MonoBehaviour:
   m_ObjectHideFlags: 0
