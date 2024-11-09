@@ -70,6 +70,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5265818594211343088, guid: 861db50c19332444fb3e8191ec9b87e8,
         type: 3}
+      propertyPath: strength
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5265818594211343088, guid: 861db50c19332444fb3e8191ec9b87e8,
+        type: 3}
       propertyPath: characterName
       value: Jen
       objectReference: {fileID: 0}

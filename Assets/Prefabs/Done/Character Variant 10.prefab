@@ -154,6 +154,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8755796428660200410, guid: 905e0075282e6b54a8333429fba12963,
         type: 3}
+      propertyPath: strength
+      value: 82
+      objectReference: {fileID: 0}
+    - target: {fileID: 8755796428660200410, guid: 905e0075282e6b54a8333429fba12963,
+        type: 3}
       propertyPath: characterName
       value: The wolfs Spirit
       objectReference: {fileID: 0}

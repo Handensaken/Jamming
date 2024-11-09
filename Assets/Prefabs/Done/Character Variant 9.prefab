@@ -149,6 +149,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5670770872579172088, guid: 0199ff85f72be5145a35e2bffbd8b468,
         type: 3}
+      propertyPath: strength
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670770872579172088, guid: 0199ff85f72be5145a35e2bffbd8b468,
+        type: 3}
       propertyPath: characterName
       value: Joe Rogan
       objectReference: {fileID: 0}

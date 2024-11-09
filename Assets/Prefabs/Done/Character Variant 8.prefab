@@ -152,6 +152,11 @@ PrefabInstance:
       propertyPath: line
       value: It looks like 6-15 do the job
       objectReference: {fileID: 0}
+    - target: {fileID: 8248797402644898425, guid: 9073726db4d4e974a98396a1b497f87a,
+        type: 3}
+      propertyPath: strength
+      value: 52
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 9049486088571366681, guid: 9073726db4d4e974a98396a1b497f87a, type: 3}

@@ -70,6 +70,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5430321737366307296, guid: eb22f11889f74154d9152cbcc897456f,
         type: 3}
+      propertyPath: strength
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430321737366307296, guid: eb22f11889f74154d9152cbcc897456f,
+        type: 3}
       propertyPath: characterName
       value: Poop
       objectReference: {fileID: 0}
