@@ -12,7 +12,7 @@ public class CameraManager : MonoBehaviour
     private bool Hover;
     private Vector3 cameraStartPosition;
     private Vector3 target;
-    
+
     //Max ooger booger
     private bool _fighting;
     [SerializeField] private Transform _fightingCameraPos;
@@ -34,6 +34,8 @@ public class CameraManager : MonoBehaviour
     {
         GameEventsManager.instance.cameraEvents.OnHoverEnter -= HoverEnter;
         GameEventsManager.instance.cameraEvents.OnHoverExit -= HoverExit;
+        GameEventsManager.instance.cameraEvents.OnFightStart -= FightStart;
+
     }
 
     void Update()
@@ -83,11 +85,14 @@ public class CameraManager : MonoBehaviour
         Gizmos.DrawSphere(target, 0.5f);
     }
 
-    public void FightStart() {
-        Debug.Log("Fight");
-        _fighting = true;
-        mainCamera.transform.position = _fightingCameraPos.position;
-        mainCamera.transform.rotation = _fightingCameraPos.rotation;
-        
-     }
+    public void FightStart()
+    {
+        if (_fightingCameraPos != null)
+        {
+            Debug.Log("Fight");
+            _fighting = true;
+            mainCamera.transform.position = _fightingCameraPos.position;
+            mainCamera.transform.rotation = _fightingCameraPos.rotation;
+        }
+    }
 }
