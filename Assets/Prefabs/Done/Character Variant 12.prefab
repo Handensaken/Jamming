@@ -8,6 +8,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 478995806462419914, guid: 1b5bff9f886376d44bc95a375e94d84a,
+        type: 3}
+      propertyPath: line
+      value: But what if I change?
+      objectReference: {fileID: 0}
+    - target: {fileID: 478995806462419914, guid: 1b5bff9f886376d44bc95a375e94d84a,
+        type: 3}
+      propertyPath: strength
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 1483015938958712246, guid: 1b5bff9f886376d44bc95a375e94d84a,
         type: 3}
       propertyPath: m_Name
