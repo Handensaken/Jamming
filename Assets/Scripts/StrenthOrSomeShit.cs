@@ -11,10 +11,20 @@ public class StrenthOrSomeShit : MonoBehaviour
     private bool Hover = false;
     public string line;
     public string characterName;
+    public GameObject spotlight;
 
     void Start()
     {
+        if (spotlight != null)
+        {
+            spotlight.SetActive(false);
+        }
         gameObject.tag = "Pickable";
+        GameEventsManager.instance.pickedEvents.OnSelectionDone += SelectionDone;
+    }
+    void OnDisable()
+    {
+        GameEventsManager.instance.pickedEvents.OnSelectionDone -= SelectionDone;
     }
     void Update()
     {
@@ -23,8 +33,17 @@ public class StrenthOrSomeShit : MonoBehaviour
 
         }
     }
+    private void SelectionDone(GameObject g)
+    {
+        spotlight.SetActive(false);
+
+    }
     public void Selected()
     {
+        if (spotlight != null)
+        {
+            spotlight.SetActive(true);
+        }
         transform.parent = null;
         Hover = false;
         GameEventsManager.instance.cameraEvents.HoverExit();
