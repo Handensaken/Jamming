@@ -16,6 +16,7 @@ public class TestScript : MonoBehaviour
         Huhrensohn.SetFloat("SpeedMult", speedmult);
         GameEventsManager.instance.pickedEvents.OnPicked += CelebratePooper;
         GameEventsManager.instance.cameraEvents.OnFightStart += StartFighting;
+        GameEventsManager.instance.winEvents.OnGameEnd += gameEnd;
     }
 
     // Update is called once per frame
@@ -46,6 +47,11 @@ public class TestScript : MonoBehaviour
         Huhrensohn.SetFloat(name, r);
     }
 
+    private void gameEnd(string value){
+        Debug.Log("Running Game End");
+        SetTrigger(value);
+    }
+
     void OnEnable()
     {
     }
@@ -63,6 +69,7 @@ public class TestScript : MonoBehaviour
     {
         GameEventsManager.instance.pickedEvents.OnPicked -= CelebratePooper;
         GameEventsManager.instance.cameraEvents.OnFightStart -= StartFighting;
+        GameEventsManager.instance.winEvents.OnGameEnd -= gameEnd;
     }
 
     public void EndCelebrate()

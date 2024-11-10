@@ -16,25 +16,27 @@ public class WinLose : MonoBehaviour
     public List<Transform> CharacterLosePositions;
     private List<GameObject> yourSquad;
     private Camera mainCamera;
+
     void Start()
     {
         mainCamera = FindAnyObjectByType<Camera>();
         GameEventsManager.instance.cameraEvents.OnFightStart += InvokeEnding;
     }
-    void OnEnable()
-    {
-    }
+
+    void OnEnable() { }
+
     void OnDisable()
     {
         GameEventsManager.instance.cameraEvents.OnFightStart -= InvokeEnding;
     }
+
     void InvokeEnding()
     {
         Invoke("ChooseEnding", time);
     }
+
     void ChooseEnding()
     {
-
         PickManager pickManager = FindAnyObjectByType<PickManager>();
         yourSquad = pickManager.pickedCharacters;
         for (int i = 0; i < pickManager.pickedCharacters.Count; i++)
@@ -49,8 +51,7 @@ public class WinLose : MonoBehaviour
                 //yourSquad[i].transform.position = Vector3.zero;
                 yourSquad[i].transform.position = CharacterWinPositions[i].position;
                 yourSquad[i].transform.rotation = CharacterWinPositions[i].rotation;
-
-
+                broadcastWinEvent("Win");
             }
         }
         else
@@ -60,8 +61,13 @@ public class WinLose : MonoBehaviour
             {
                 yourSquad[i].transform.position = CharacterLosePositions[i].transform.position;
                 yourSquad[i].transform.rotation = CharacterLosePositions[i].transform.rotation;
-
+                broadcastWinEvent("lose");
             }
         }
+    }
+
+    private void broadcastWinEvent(string value)
+    {
+        GameEventsManager.instance.winEvents.GameEnd(value);
     }
 }
