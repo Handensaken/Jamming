@@ -50,21 +50,22 @@ public class WinLose : MonoBehaviour
                 yourSquad[i].transform.rotation = CharacterWinPositions[i].rotation;
                 if (winText != null)
                 {
-                    if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Victor")
+                    if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Mr Hat Man")
                     {
-                        winText.text = "Victor put the V in voluminous, more like the V in Victory";
+                        winText.text = "Damn Mr Hat Man dripped out your whole team. Hats that fancy makes it hard to lose a battle";
+                        GameEventsManager.instance.winEvents.HatsForEveryone();
                     }
-                    if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Baba Yaga")
-                    {
-                        winText.text = "Baba Yaga was John Wick in disguise. He was soo cool. All the enemys started running when they saw him";
-                    }
-                    if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Alive Andy")
+                    else if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Alive Andy")
                     {
                         winText.text = "Somehow your team won with Alive Andy. That is impresive";
                     }
-                    if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Mr Hat Man")
+                    else if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Victor")
                     {
-                        winText.text = "Damn Mr Hat Man dripped out your whole team. Hats that fancy makes tt hard to lose a battle";
+                        winText.text = "Victor put the V in voluminous, more like the V in Victory";
+                    }
+                    else if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Baba Yaga")
+                    {
+                        winText.text = "Baba Yaga was John Wick in disguise. He was soo cool. All the enemys started running when they saw him";
                     }
                     for (int j = 0; j < yourSquad.Count; j++)
                     {
@@ -95,18 +96,6 @@ public class WinLose : MonoBehaviour
                 yourSquad[i].transform.rotation = CharacterLosePositions[i].transform.rotation;
                 if (loseText != null)
                 {
-                    if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Ms Jones")
-                    {
-                        loseText.text = "You lost hard. You should have brought a gun. Or some better fighters";
-                    }
-                    if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Jen")
-                    {
-                        loseText.text = "Jen was right, you led the battle and not you lost. Well there is always next time";
-                    }
-                    if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Dominic")
-                    {
-                        loseText.text = "Dominic found his phone, but... Oh no there is no cell reception. You lost...";
-                    }
                     if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Alive Andy")
                     {
                         int andyTarget = 0;
@@ -121,6 +110,18 @@ public class WinLose : MonoBehaviour
                         loseText.text = "Alive Andy eat " + yourSquad[andyTarget].GetComponent<StrenthOrSomeShit>().characterName
                         + " as a result you lost the battle";
                         Destroy(yourSquad[andyTarget]);
+                    }
+                    else if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Ms Jones")
+                    {
+                        loseText.text = "You lost hard. You should have brought a gun. Or some better fighters";
+                    }
+                    else if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Jen")
+                    {
+                        loseText.text = "Jen was right, you led the battle and not you lost. Well there is always next time";
+                    }
+                    else if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Dominic")
+                    {
+                        loseText.text = "Dominic found his phone, but... Oh no there is no cell reception. You lost...";
                     }
                     //Baba Yaga
                 }
