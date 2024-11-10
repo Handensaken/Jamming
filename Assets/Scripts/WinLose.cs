@@ -34,6 +34,10 @@ public class WinLose : MonoBehaviour
     }
     void ChooseEnding()
     {
+        SceneLoader sceneLoader= FindAnyObjectByType<SceneLoader>();
+        if (sceneLoader != null){
+            sceneLoader.LoadScene();
+        }
         PickManager pickManager = FindAnyObjectByType<PickManager>();
         yourSquad = pickManager.pickedCharacters;
         for (int i = 0; i < pickManager.pickedCharacters.Count; i++)
