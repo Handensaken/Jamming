@@ -146,6 +146,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2942748084655666710}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &2131071584267955350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3884578970329178511}
+  - component: {fileID: 8775485718017623735}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3884578970329178511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131071584267955350}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6609499928846998979}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8775485718017623735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131071584267955350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63ddde547e326844dac6506fdd98deaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: MainMenu
+  loadDeley: 15
 --- !u!1 &2454845384035811591
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,6 +290,7 @@ MonoBehaviour:
   - {fileID: 1437144512412606226, guid: 37c10f6f0c4632343b52bf0af32d72a9, type: 3}
   - {fileID: 4891269531673409893, guid: 59af38112c1d82944b4043d584bd14cc, type: 3}
   - {fileID: 508771281383499064, guid: 60a290c202d6b4e4ea59b48058d7947f, type: 3}
+  cameraAnimator: {fileID: 0}
   Ash: {fileID: 841155597125963254, guid: 257c899b2e264a8488988854ed935a44, type: 3}
 --- !u!1 &3839285518133679215
 GameObject:
@@ -280,6 +327,7 @@ Transform:
   - {fileID: 7316597907082314082}
   - {fileID: 9135070116641387103}
   - {fileID: 7675269053912448603}
+  - {fileID: 3884578970329178511}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4596170072229383893
@@ -471,6 +519,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  mainCamera: {fileID: 0}
+  winText: {fileID: 0}
+  loseText: {fileID: 0}
 --- !u!1 &6907656507048018271
 GameObject:
   m_ObjectHideFlags: 0
