@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
-    public Camera mainCamera;
+    public Transform mainCamera;
     public float maxDistance = 10f;
     public float speed = 5f;
     private bool Hover;
