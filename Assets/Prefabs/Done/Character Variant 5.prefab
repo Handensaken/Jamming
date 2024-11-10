@@ -66,7 +66,8 @@ PrefabInstance:
     - target: {fileID: 5430321737366307296, guid: eb22f11889f74154d9152cbcc897456f,
         type: 3}
       propertyPath: line
-      value: Idk why the first 5 just dont work
+      value: "Stay close, and don\u2019t hesitate\u2014there\u2019s no room for fear
+        when we\u2019re in this together. We fight as one, or we fall as one"
       objectReference: {fileID: 0}
     - target: {fileID: 5430321737366307296, guid: eb22f11889f74154d9152cbcc897456f,
         type: 3}
@@ -76,7 +77,7 @@ PrefabInstance:
     - target: {fileID: 5430321737366307296, guid: eb22f11889f74154d9152cbcc897456f,
         type: 3}
       propertyPath: characterName
-      value: Peter
+      value: Ronan Bigfeather
       objectReference: {fileID: 0}
     - target: {fileID: 6443920850037342108, guid: eb22f11889f74154d9152cbcc897456f,
         type: 3}

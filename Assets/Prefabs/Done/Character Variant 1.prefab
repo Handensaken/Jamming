@@ -71,7 +71,7 @@ PrefabInstance:
     - target: {fileID: 8370733499702906474, guid: 19cd32c3bdc2ad740be0cac301c3f603,
         type: 3}
       propertyPath: line
-      value: So Im just a bit dumb, bruh moment
+      value: Im like Indiana Jones, but without the gun.
       objectReference: {fileID: 0}
     - target: {fileID: 8370733499702906474, guid: 19cd32c3bdc2ad740be0cac301c3f603,
         type: 3}
@@ -81,7 +81,7 @@ PrefabInstance:
     - target: {fileID: 8370733499702906474, guid: 19cd32c3bdc2ad740be0cac301c3f603,
         type: 3}
       propertyPath: characterName
-      value: Ms Poop
+      value: Ms Jones
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

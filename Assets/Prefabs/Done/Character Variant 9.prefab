@@ -145,7 +145,7 @@ PrefabInstance:
     - target: {fileID: 5670770872579172088, guid: 0199ff85f72be5145a35e2bffbd8b468,
         type: 3}
       propertyPath: line
-      value: Do even the rest of them work
+      value: The right of the people to keep and bear Arms, shall not be infringed
       objectReference: {fileID: 0}
     - target: {fileID: 5670770872579172088, guid: 0199ff85f72be5145a35e2bffbd8b468,
         type: 3}

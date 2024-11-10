@@ -16,7 +16,8 @@ PrefabInstance:
     - target: {fileID: 478995806462419914, guid: 1b5bff9f886376d44bc95a375e94d84a,
         type: 3}
       propertyPath: line
-      value: But what if I change?
+      value: I will smash our enemies into the ground, so that they will become nutrients
+        for the trees
       objectReference: {fileID: 0}
     - target: {fileID: 478995806462419914, guid: 1b5bff9f886376d44bc95a375e94d84a,
         type: 3}

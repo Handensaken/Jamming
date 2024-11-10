@@ -100,7 +100,7 @@ PrefabInstance:
     - target: {fileID: 126316670355054958, guid: 37c10f6f0c4632343b52bf0af32d72a9,
         type: 3}
       propertyPath: line
-      value: fine poop
+      value: How could I lose with a hat this fine
       objectReference: {fileID: 0}
     - target: {fileID: 126316670355054958, guid: 37c10f6f0c4632343b52bf0af32d72a9,
         type: 3}

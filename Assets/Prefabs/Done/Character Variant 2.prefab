@@ -150,7 +150,8 @@ PrefabInstance:
     - target: {fileID: 8849565318677643689, guid: ec693b62afc6d7442b3b1a71bef89c29,
         type: 3}
       propertyPath: line
-      value: Wait dose the first 5 work
+      value: "They call me 'Carlos the Whisper'... 'cause by the time you hear me,
+        it\u2019s already too late"
       objectReference: {fileID: 0}
     - target: {fileID: 8849565318677643689, guid: ec693b62afc6d7442b3b1a71bef89c29,
         type: 3}
@@ -160,7 +161,7 @@ PrefabInstance:
     - target: {fileID: 8849565318677643689, guid: ec693b62afc6d7442b3b1a71bef89c29,
         type: 3}
       propertyPath: characterName
-      value: your moms bf
+      value: Carlos The Wisper
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

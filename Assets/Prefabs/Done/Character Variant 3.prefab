@@ -66,7 +66,7 @@ PrefabInstance:
     - target: {fileID: 5549300718527132590, guid: c7c782d226a8b244dbb25aaee3dc5273,
         type: 3}
       propertyPath: line
-      value: huh
+      value: Keep your children close if you want to keep them
       objectReference: {fileID: 0}
     - target: {fileID: 5549300718527132590, guid: c7c782d226a8b244dbb25aaee3dc5273,
         type: 3}
@@ -76,7 +76,7 @@ PrefabInstance:
     - target: {fileID: 5549300718527132590, guid: c7c782d226a8b244dbb25aaee3dc5273,
         type: 3}
       propertyPath: characterName
-      value: Baba
+      value: Baba Yaga
       objectReference: {fileID: 0}
     - target: {fileID: 6859567844554264018, guid: c7c782d226a8b244dbb25aaee3dc5273,
         type: 3}

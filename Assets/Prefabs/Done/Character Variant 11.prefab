@@ -16,7 +16,7 @@ PrefabInstance:
     - target: {fileID: 1082321175898766756, guid: ba756dccd2bcefe4fa13f0dd5bcdbc61,
         type: 3}
       propertyPath: line
-      value: so good poop
+      value: Give me your precious metals or I will not fight
       objectReference: {fileID: 0}
     - target: {fileID: 1082321175898766756, guid: ba756dccd2bcefe4fa13f0dd5bcdbc61,
         type: 3}
