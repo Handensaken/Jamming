@@ -64,3 +64,6 @@ public class WinLose : MonoBehaviour
         GameEventsManager.instance.winEvents.GameEnd(value);
     }
 }
+public class CustomWin : MonoBehaviour{
+    
+}
