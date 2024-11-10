@@ -55,7 +55,7 @@ public class WinLose : MonoBehaviour
             {
                 yourSquad[i].transform.position = CharacterLosePositions[i].transform.position;
                 yourSquad[i].transform.rotation = CharacterLosePositions[i].transform.rotation;
-                broadcastWinEvent("lose");
+                broadcastWinEvent("Lose");
             }
         }
     }
