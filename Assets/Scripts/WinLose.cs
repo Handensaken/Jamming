@@ -99,7 +99,7 @@ public class WinLose : MonoBehaviour
                     if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Alive Andy")
                     {
                         int andyTarget = 0;
-                        if (i > 5)
+                        if (i == 4)
                         {
                             andyTarget = i - 1;
                         }
