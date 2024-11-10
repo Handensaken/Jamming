@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class TestScript : MonoBehaviour
 {
     private Animator Huhrensohn;
+    [SerializeField] private GameObject hat;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +19,7 @@ public class TestScript : MonoBehaviour
         GameEventsManager.instance.pickedEvents.OnPicked += CelebratePooper;
         GameEventsManager.instance.cameraEvents.OnFightStart += StartFighting;
         GameEventsManager.instance.winEvents.OnGameEnd += gameEnd;
+        GameEventsManager.instance.winEvents.OnHatsForEveryone += hats;
     }
 
     // Update is called once per frame
@@ -29,6 +32,9 @@ public class TestScript : MonoBehaviour
             SetRandomFloat("AltSadVal");
             SetRandomFloat("HappyAltVal");
         }
+    }
+    private void hats(){
+        hat.SetActive(true);
     }
 
     public void SetTrigger(string name)
@@ -70,6 +76,8 @@ public class TestScript : MonoBehaviour
         GameEventsManager.instance.pickedEvents.OnPicked -= CelebratePooper;
         GameEventsManager.instance.cameraEvents.OnFightStart -= StartFighting;
         GameEventsManager.instance.winEvents.OnGameEnd -= gameEnd;
+        GameEventsManager.instance.winEvents.OnHatsForEveryone -= hats;
+
     }
 
     public void EndCelebrate()

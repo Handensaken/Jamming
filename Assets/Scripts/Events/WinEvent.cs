@@ -5,11 +5,23 @@ using UnityEngine;
 
 public class WinEvent
 {
-  public event Action<string> OnGameEnd;
-  public void GameEnd(string value){
-    if (OnGameEnd != null)
+    public event Action<string> OnGameEnd;
+
+    public void GameEnd(string value)
+    {
+        if (OnGameEnd != null)
         {
             OnGameEnd(value);
         }
-  }
+    }
+
+    public event Action OnHatsForEveryone;
+
+    public void HatsForEveryone()
+    {
+        if (OnHatsForEveryone != null)
+        {
+            OnHatsForEveryone();
+        }
+    }
 }

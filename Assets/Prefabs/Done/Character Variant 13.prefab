@@ -8,6 +8,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3173390588087401309}
     m_Modifications:
+    - target: {fileID: -8339225424965057080, guid: ac82be86c05edcf43bdbb92b1ac3e061,
+        type: 3}
+      propertyPath: hat
+      value: 
+      objectReference: {fileID: 2083806351720462086}
+    - target: {fileID: 18199916368749205, guid: ac82be86c05edcf43bdbb92b1ac3e061,
+        type: 3}
+      propertyPath: m_Name
+      value: Hat
+      objectReference: {fileID: 0}
     - target: {fileID: 18570667278218333, guid: ac82be86c05edcf43bdbb92b1ac3e061,
         type: 3}
       propertyPath: m_Name
@@ -78,6 +88,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac82be86c05edcf43bdbb92b1ac3e061, type: 3}
+--- !u!1 &2083806351720462086 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 18199916368749205, guid: ac82be86c05edcf43bdbb92b1ac3e061,
+    type: 3}
+  m_PrefabInstance: {fileID: 2065888255002924435}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2089120025205158446 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 24077054129203133, guid: ac82be86c05edcf43bdbb92b1ac3e061,
