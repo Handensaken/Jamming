@@ -15,24 +15,20 @@ public class WinLose : MonoBehaviour
     public List<Transform> CharacterWinPositions;
     public List<Transform> CharacterLosePositions;
     private List<GameObject> yourSquad;
-    private Camera mainCamera;
+    public Transform mainCamera;
     void Start()
     {
         GameEventsManager.instance.cameraEvents.OnFightStart += InvokeEnding;
     }
-
     void OnEnable() { }
-
     void OnDisable()
     {
         GameEventsManager.instance.cameraEvents.OnFightStart -= InvokeEnding;
     }
-
     void InvokeEnding()
     {
         Invoke("ChooseEnding", time);
     }
-
     void ChooseEnding()
     {
         PickManager pickManager = FindAnyObjectByType<PickManager>();
@@ -63,7 +59,6 @@ public class WinLose : MonoBehaviour
             }
         }
     }
-
     private void broadcastWinEvent(string value)
     {
         GameEventsManager.instance.winEvents.GameEnd(value);
