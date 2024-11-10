@@ -15,10 +15,9 @@ public class WinLose : MonoBehaviour
     public List<Transform> CharacterWinPositions;
     public List<Transform> CharacterLosePositions;
     private List<GameObject> yourSquad;
-    private Camera mainCamera;
+    public Transform mainCamera;
     void Start()
     {
-        mainCamera = FindAnyObjectByType<Camera>();
         GameEventsManager.instance.cameraEvents.OnFightStart += InvokeEnding;
     }
     void OnEnable()

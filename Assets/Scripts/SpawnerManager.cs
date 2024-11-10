@@ -9,6 +9,7 @@ public class SpawnerManager : MonoBehaviour
     private Transform[] spawnPoints = new Transform[3];
     public List<GameObject> spawnableCharacters = new List<GameObject>();
     private List<GameObject> spawnedCharacters = new List<GameObject>();
+    public Animator cameraAnimator;
 
     void Start()
     {
@@ -64,6 +65,9 @@ public class SpawnerManager : MonoBehaviour
 
     private void SpawnParticles(Vector3 pos)
     {
+        if (cameraAnimator != null){
+            cameraAnimator.SetTrigger("Shake");
+        }
         Instantiate(Ash, new Vector3(pos.x, pos.y-1, pos.z), quaternion.identity);
     }
 
