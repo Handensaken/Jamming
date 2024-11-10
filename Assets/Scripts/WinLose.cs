@@ -50,12 +50,37 @@ public class WinLose : MonoBehaviour
                 yourSquad[i].transform.rotation = CharacterWinPositions[i].rotation;
                 if (winText != null)
                 {
-                    Debug.Log("You did win");
+                    if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Victor")
+                    {
+                        winText.text = "Victor put the V in voluminous, more like the V in Victory";
+                    }
+                    if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Baba Yaga")
+                    {
+                        winText.text = "Baba Yaga was John Wick in disguise. He was soo cool. All the enemys started running when they saw him";
+                    }
                     if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Alive Andy")
                     {
-                        Debug.Log("andy??");
-
-                        winText.text = "Somehow Your Team Won with Alive Andy. That Is Impresive";
+                        winText.text = "Somehow your team won with Alive Andy. That is impresive";
+                    }
+                    if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Mr Hat Man")
+                    {
+                        winText.text = "Damn Mr Hat Man dripped out your whole team. Hats that fancy makes tt hard to lose a battle";
+                    }
+                    for (int j = 0; j < yourSquad.Count; j++)
+                    {
+                        if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Alive Andy"
+                        && yourSquad[j].GetComponent<StrenthOrSomeShit>().characterName == "Slippery Simon")
+                        {
+                            winText.text = "Alive Andy slid into battle on slippery simon and successfully landed the winning blow";
+                        }
+                    }
+                    for (int j = 0; j < yourSquad.Count; j++)
+                    {
+                        if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Ms Jones"
+                        && yourSquad[j].GetComponent<StrenthOrSomeShit>().characterName == "Joe Rogan")
+                        {
+                            winText.text = "Ms Jones did not have a gun, but luckely Joe Rogan had a spare one. After that victory was a breeze";
+                        }
                     }
                 }
                 broadcastWinEvent("Win");
@@ -70,10 +95,34 @@ public class WinLose : MonoBehaviour
                 yourSquad[i].transform.rotation = CharacterLosePositions[i].transform.rotation;
                 if (loseText != null)
                 {
-                    if (yourSquad[i].GetComponent<StrenthOrSomeShit>().name == "Alive Andy")
+                    if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Ms Jones")
                     {
-
+                        loseText.text = "You lost hard. You should have brought a gun. Or some better fighters";
                     }
+                    if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Jen")
+                    {
+                        loseText.text = "Jen was right, you led the battle and not you lost. Well there is always next time";
+                    }
+                    if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Dominic")
+                    {
+                        loseText.text = "Dominic found his phone, but... Oh no there is no cell reception. You lost...";
+                    }
+                    if (yourSquad[i].GetComponent<StrenthOrSomeShit>().characterName == "Alive Andy")
+                    {
+                        int andyTarget = 0;
+                        if (i > 5)
+                        {
+                            andyTarget = i - 1;
+                        }
+                        else
+                        {
+                            andyTarget = i + 1;
+                        }
+                        loseText.text = "Alive Andy eat " + yourSquad[andyTarget].GetComponent<StrenthOrSomeShit>().characterName
+                        + " as a result you lost the battle";
+                        Destroy(yourSquad[andyTarget]);
+                    }
+                    //Baba Yaga
                 }
                 broadcastWinEvent("Lose");
             }
