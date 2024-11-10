@@ -14,13 +14,11 @@ public class SpawnerManager : MonoBehaviour
     void Start()
     {
         InstantiateCharacters();
-    }
-
-    void OnEnable()
-    {
         GameEventsManager.instance.pickedEvents.OnSelectionDone += NewSpawn;
         GameEventsManager.instance.pickedEvents.OnPicked += RemoveUnSelected;
     }
+
+    void OnEnable() { }
 
     void OnDisable()
     {
@@ -54,7 +52,7 @@ public class SpawnerManager : MonoBehaviour
         spawnedCharacters.Remove(gameObject);
         foreach (var item in spawnedCharacters)
         {
-//            Debug.Log(item);
+            //            Debug.Log(item);
             if (item != null)
             {
                 SpawnParticles(item.transform.position);
@@ -65,10 +63,11 @@ public class SpawnerManager : MonoBehaviour
 
     private void SpawnParticles(Vector3 pos)
     {
-        if (cameraAnimator != null){
+        if (cameraAnimator != null)
+        {
             cameraAnimator.SetTrigger("Shake");
         }
-        Instantiate(Ash, new Vector3(pos.x, pos.y-1, pos.z), quaternion.identity);
+        Instantiate(Ash, new Vector3(pos.x, pos.y - 1, pos.z), quaternion.identity);
     }
 
     void OnDrawGizmosSelected()

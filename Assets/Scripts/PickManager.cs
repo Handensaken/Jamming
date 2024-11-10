@@ -10,7 +10,7 @@ public class PickManager : MonoBehaviour
     public List<GameObject> pickedCharacters = new List<GameObject>();
     public Transform fightingPos;
     [SerializeField] private Transform[] pickedCharacterPosition = new Transform[5];
-    void OnEnable()
+    void Start()
     {
         GameEventsManager.instance.pickedEvents.OnPicked += AddCharacters;
         GameEventsManager.instance.pickedEvents.OnSelectionDone += MoveCharacter;
