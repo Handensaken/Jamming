@@ -110,7 +110,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6443920850037342108}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -145,7 +145,7 @@ PrefabInstance:
     - target: {fileID: 3727813387393579664, guid: 41a3a48711071a045b24692316ce4b6f,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.01
+      value: 0.015
       objectReference: {fileID: 0}
     - target: {fileID: 3727813387393579664, guid: 41a3a48711071a045b24692316ce4b6f,
         type: 3}
